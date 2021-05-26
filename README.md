@@ -55,8 +55,8 @@ Enter phrase: hello
 Original Phrase:  hello
 Scrambled:  SQJSB
 -------------
-Unscrambled:  hello
-Unscrambled Reverse:  SQJSB
+Unscrambled:  hello # using SQJSB  (new scrambled phrase)
+Unscrambled Reverse:  SQJSB # using hello (original phrase)
 ```
 
 
