@@ -15,7 +15,9 @@ You should NEVER store passwords in plain text, and this library should not repl
 
 If this library is to be used with your application, do NOT store this decoder file in the same database or server. That defeats the purpose.
 
-# CLI
+# How To Use/How To Install
+
+## CLI
 ```bash
 usage: cli.py [-h] [--scramble SCRAMBLE] [--unscramble UNSCRAMBLE]
               [reverse [reverse ...]] [specialchars [specialchars ...]]
@@ -37,16 +39,24 @@ Run the CLI locally:
 ```bash
 git clone https://github.com/ableinc/Scramblr.git
 cd scramblr
-python scramblr/cli.py --help
+python3 scramblr/cli.py --help
 ```
 
-# Example
+## Example
 Please run the example.py file.
 ```bash
 git clone https://github.com/ableinc/Scramblr.git
 cd scramblr
 python3 example.py
 ```
-
+Output:
+```bash
+Enter phrase: hello
+Original Phrase:  hello
+Scrambled:  SQJSB
+-------------
+Unscrambled:  hello
+Unscrambled Reverse:  SQJSB
+```
 
 
