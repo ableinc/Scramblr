@@ -1,4 +1,4 @@
-import random, getpass, json, sys, os
+import secrets, getpass, json, sys, os
 
 
 class Scramblr:
@@ -13,8 +13,12 @@ class Scramblr:
         self.pwd = '.pwd'
 
     def _get_random_character(self):
+        make_lower_case = secrets.choice([True, False])
         alphanum = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890' + ['!@#$%&_' if self.use_special_chars else ''][0] 
-        return alphanum[random.randint(0, len(alphanum) - 1)]
+        char = secrets.choice(alphanum)
+        if make_lower_case:
+            return char.lower()
+        return char
 
     def in_use(self,  index):
         for i in self.security_indexes:
